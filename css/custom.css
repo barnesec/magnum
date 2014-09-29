@@ -1,0 +1,240 @@
+/* ============= !!!! IMPORTANT !!!!!!!!!!!! ============== */
+
+/*
+	The !important CSS property was used in order to 
+	override some of the CSS properties in other stylesheets
+	that this page uses.  
+
+	If you're editing this document, keep that in mind.
+*/
+
+
+
+/*  ======== FONT ========= */
+body, html {
+	font-family: 'Lato', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+/* ======== HEADER CSS ========= */
+.navbar {
+	padding: 15px 0;
+}
+
+.navbar-default ul li {
+	padding: 0 5px;
+}
+
+.navbar-header a {
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-brand img {
+	width: auto;
+	height: 100%;
+}
+
+.servLink {
+	border-bottom: 1px solid #f00;
+	width: 100px;
+	padding-left: 15px;
+	text-align: right;
+}
+
+.servLink:before {
+	border-style: none;
+}
+
+.servLink a {
+	color: #777;
+}
+
+.servLink a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* ======== SLIDER CSS ========= */
+.flexslider {
+	border: none !important;
+	margin: 0 !important;
+	position: absolute;
+}
+
+.flexslider img {
+	height: 500px;
+}
+
+.slides {
+	z-index: 1;
+}
+
+.flex-control-nav {
+	z-index: 2;
+	position: relative;
+	bottom: 0 !important;
+	height: 100px;
+}
+
+.hidetext, .flex-title {
+	padding: 5px;
+	margin: 0;	
+}
+
+.hidetext {
+	text-align: left;
+}
+
+.flex-title {
+	font-size: 1.5em;
+}
+
+.flex-control-nav li {
+	background-color: #f1f1f1;
+	position: relative;
+	margin: 0;
+	width: 15%;
+	bottom: -60px;
+	border-bottom: 1px solid #f00;
+	-webkit-transition: all 600ms ease;
+	-moz-transition: all 600ms ease;
+	-ms-transition: all 600ms ease;
+	-o-transition: all 600ms ease;
+	transition: all 600ms ease;
+}
+
+.flex-control-nav li:hover, .flex-control-nav .flex-active {
+	background-color: #000;
+	opacity: 0.8;
+	color: #fff;
+	bottom: -8px;
+}
+
+
+/* ======== ROW CSS ========= */
+
+.row {
+	width: 100%;
+	margin: 0 !important;
+}
+
+#toprow {
+	height: 500px;
+	margin: 0;
+	padding: 0;
+}
+
+#midrow {
+	background-color: #f1f1f1;
+	min-height: 250px;
+	padding: 0;
+	z-index: 3;
+	position: relative;
+}
+
+#midrow .row div, #botrow .row div {
+	padding: 15px;
+}
+
+.colimg {
+	width: 100%;
+	height: auto;
+}
+
+#botrow {
+	position: relative;
+}
+
+
+/* ======== FOOTER CSS ========= */
+
+#footer {
+	background-color: #222;
+}
+
+#footer ul li a {
+	color: #fff;
+}
+
+#footer ul li a:hover {
+	color: #f00;
+	background-color: #222;
+}
+
+/* ========== MEDIA QUERIES ============= */
+
+@media screen and (max-width: 786px) and (orientation: portrait) {
+	.flex-title {
+		font-size: 1.1em;
+	}
+
+	.hidetext {
+		font-size: .6em;
+	}
+
+	.flexslider img, #toprow {
+		height: 300px;
+	}
+
+	.flex-control-nav li {
+		width: 24%;
+		margin: 0 !important;
+		bottom: -50px;
+	}
+
+	.flex-control-nav li:hover, .flex-control-nav .flex-active {
+		bottom: -10px;
+	}
+
+}
+
+@media screen and (max-width: 786px) and (orientation: landscape) {
+	.flex-title {
+		font-size: 1.1em;
+	}
+
+	.hidetext {
+		font-size: .6em;
+	}
+
+	.flexslider img, #toprow {
+		height: 300px;
+	}
+
+	.flex-control-nav li {
+		width: 24%;
+		margin: 0 !important;
+		bottom: -70px;
+	}
+
+	.flex-control-nav li:hover, .flex-control-nav .flex-active {
+		bottom: -35px;
+	}
+
+}
+
+@media screen and (min-width: 786px) and (max-width: 1200px) {
+	.flex-title {
+		font-size: 1.3em;
+	}
+
+	.hidetext {
+		font-size: .8em;
+	}
+
+	.flexslider img, #toprow {
+		height: 400px;
+	}
+
+	.flex-control-nav li {
+		width: 22%;	
+		bottom: -70px;
+	}
+
+	.flex-control-nav li:hover, .flex-control-nav .flex-active {
+		bottom: -20px;
+	}
+
+}
