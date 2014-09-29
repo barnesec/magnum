@@ -23,7 +23,7 @@ body, html {
 }
 
 .navbar-nav li  {
-	padding-left: 45px;
+	padding-left: 30px;
 }
 
 .navbar-header a {
@@ -38,7 +38,7 @@ body, html {
 
 .servLink {
 	border-bottom: 1px solid #f00;
-	width: 100px;
+	width: 115px;
 	padding-left: 15px;
 	text-align: right;
 }
@@ -166,7 +166,7 @@ body, html {
 /* ========== LARGE DESKTOP MEDIA QUERIES ============= */
 @media screen and (min-width: 1201px) and (max-width: 1600px) {
 	.navbar-nav li {
-		padding-left: 5px;
+		padding: 0;
 	}
 
 	.navbar-brand img {
@@ -178,7 +178,7 @@ body, html {
 /* ============== TABLET/SMALL DESKTOP MEDIA QUERIES ================== */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 	.navbar-nav li {
-		padding-left: 0;
+		padding: 0;
 	}
 
 	.navbar-brand img {
@@ -212,6 +212,10 @@ body, html {
 /* ============== MOBILE MEDIA QUERIES ================== */
 
 @media screen and (max-width: 767px) and (orientation: portrait) {
+	.navbar-nav li {
+		padding: 0;
+	}
+
 	.flex-title {
 		font-size: 1.1em;
 	}
@@ -237,6 +241,10 @@ body, html {
 }
 
 @media screen and (max-width: 767px) and (orientation: landscape) {
+	.navbar-nav li {
+		padding: 0;
+	}
+
 	.flex-title {
 		font-size: 1.1em;
 	}
@@ -262,6 +270,10 @@ body, html {
 }
 
 @media screen and (max-width: 480px) {
+	.navbar-nav li {
+		padding: 0;
+	}
+
 	.flex-title {
 		font-size: 1em;
 		font-weight: bold;
